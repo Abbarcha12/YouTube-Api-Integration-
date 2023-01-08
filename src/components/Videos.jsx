@@ -3,7 +3,7 @@ import { Stack, Box } from '@mui/material'
 import { ChannelCard, VideoCard } from './index'
 const Videos = ({ video, direction }) => {
   return (
-    <Stack direction={direction} flexWrap='wrap' justifyContent='start' gap={2}>
+    <Stack direction={direction || "row"} flexWrap='wrap' justifyContent='start' gap={2}>
       {video.map((item, idx) => {
         return (
           <Box key={idx}>
